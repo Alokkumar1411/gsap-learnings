@@ -89,4 +89,7 @@ body{
     #full h4{
         font-size: 32px;
     }
+    body{
+        overflow-x: hidden;
+    }
 }
