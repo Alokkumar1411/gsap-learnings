@@ -1,32 +1,26 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 html,body{
     height: 100%;
     width: 100%;
 }
+
 body{
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
+
 #main{
     height: 100%;
     width: 100%;
     background-image: url(https://plus.unsplash.com/premium_photo-1771360820349-3f73cef9e23c?q=80&w=1296&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-
-    background-size:cover ;
+    background-size: cover;
     background-position: center;
+}
 
-}
-#nav h2{
-    font-size: 30px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#nav i{
-    font-size: 30px;
-    font-weight: 800;
-    cursor:pointer;
-}
 #nav{
     display: flex;
     align-items: center;
@@ -34,23 +28,36 @@ body{
     padding: 30px 40px;
     color: white;
 }
+
+#nav h2{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nav i{
+    font-size: 30px;
+    font-weight: 800;
+    cursor:pointer;
+}
+
 #full{
     height: 100%;
-    width:30%;
-    position:absolute;
-    background-color: rgba(255, 255, 255, 0.294);
+    width: 30%;
+    position: absolute;
     top: 0;
-    right:-40%;
-    backdrop-filter:blur(10px) ;
+    right: -30%;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
     padding: 100px 55px;
-    
 }
+
 #full h4{
     font-weight: 500;
     font-size: 50px;
-     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     margin-bottom: 8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 8px;
 }
+
 #full i{
     position: absolute;
     top: 5%;
@@ -61,4 +68,25 @@ body{
     font-weight: 700;
     font-size: 20px;
     cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+    #nav{
+        padding: 20px;
+    }
+
+    #nav h2{
+        font-size: 24px;
+    }
+
+    #full{
+        width: 100%;
+        right: -100%;
+        padding: 120px 40px;
+    }
+
+    #full h4{
+        font-size: 32px;
+    }
 }
