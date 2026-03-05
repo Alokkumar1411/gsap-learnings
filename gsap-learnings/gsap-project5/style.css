@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+/* ❌ height:100% hata diya */
+section{
+    width: 100%;
+}
+
+/* ✅ Sirf first section ko full height diya */
+.section1{
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 30px 50px;
+}
+
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav h2{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+nav h4{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+nav button{
+    padding: 7px 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    font-weight: 500;
+    
+    /* ❌ galat border-radius line hata ke */
+    /* border-radius: 1px solid black; */
+
+    /* ✅ correct border */
+    border: 1px solid black;
+
+    background-color:transparent;
+}
+
+nav h2 i{
+    font-size: 25px;
+    padding-right: 4.8px;
+    rotate: 45deg;
+    display: inline-block;
+}
+
+.center{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    padding: 30px 50px;
+}
+
+/* ❌ 60% + 60% = 120% tha */
+/* ✅ dono ko 50% kar diya */
+.center1{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.center2{
+    height: 100%;
+    width: 50%;
+}
+
+.center1 h1{
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.center1 p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 95%;
+}
+
+.center1 button{
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 17px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+}
+
+.center2 img{
+    height: 90%;
+    position: absolute;
+    right: 10px;
+}
+
+.section1bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+.section1bottom img{
+    height: 50px;
+}
+
+.section2 .services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap:20px;
+}
+.services h3{
+    font-weight: 400;
+    background-color: rgba(61, 240, 61, 0.876);
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+.services p{
+    width: 500px;
+    font-size: 20px;
+}
+.container{
+    height: 80%;
+    width:100%;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+    flex-wrap: wrap;
+    gap:60px;
+}
+.elem{
+    height: 300px;
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #fff;
+    flex-shrink: 0;
+    box-shadow: 0px 7px 0px black;
+
+}
